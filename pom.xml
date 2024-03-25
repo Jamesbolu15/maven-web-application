@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+	<!-- build triggers -->
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
@@ -22,21 +22,14 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>3.93.238.83:9000/</sonar.host.url>
+		<sonar.host.url>http://3.93.238.83:9000/</sonar.host.url> 
 		<sonar.login>admin</sonar.login>
-		<sonar.password>Admin123</sonar.password>
+		<sonar.password>Admin123</sonar.password> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
-<repositories>
-		<repository>
-			<id>nexus</id>
-			<name>nexus proxy repo</name>
-			<url>3.94.171.10:8081/repository/mwa_release/</url>
-		</repository>
-	</repositories>
 
- <dependencies>
+	<dependencies>
 		
 		<dependency>
 			<groupId>org.json</groupId>
@@ -97,25 +90,25 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>	
-	</dependencies>
+	</dependencies>	
+
 	<distributionManagement>
-	
-		<repository>
+	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://3.94.171.10:8081/repository/mwa_release/</url>
+	      <url>http://18.117.122.177:8081/repository/tesla-fe-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository</name>
-	      <url>http://3.94.171.10:8081/repository/mwa_snapshot/</url>
+	      <name>Landmark Technologies Snapshot Nexus Repository </name>
+	      <url>http://18.117.122.177:8081/repository/tesla-fe-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>apple</finalName>
+		<finalName>tesla</finalName>
 		
 		<plugins>
 			<plugin>
