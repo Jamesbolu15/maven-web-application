@@ -109,7 +109,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://34.203.189.136:8081/repository/maven-snapshots/</url>
+	      <url>http://34.203.189.136:8081/repository/mwa_snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
