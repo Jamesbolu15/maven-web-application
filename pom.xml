@@ -99,13 +99,13 @@
 		</dependency>	
 	</dependencies>
 	<distributionManagement>
-	
+	<!--
 		<repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
 	      <url>http://54.174.92.80:8081/repository/mwa_release/</url>
 	    </repository>
-	    
+	    -->
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
